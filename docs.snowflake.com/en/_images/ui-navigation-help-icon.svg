@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Navigation-Help-Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,28 C21.7319865,28 28,21.7319865 28,14 C28,6.2680135 21.7319865,0 14,0 C6.2680135,0 0,6.2680135 0,14 C0,21.7319865 6.2680135,28 14,28 Z" id="path-1"></path>
+        <filter x="-20.4%" y="-16.8%" width="140.7%" height="140.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.7" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Component-Library-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Library---WS-3.0" transform="translate(-1332.000000, -211.000000)">
+            <g id="Navigation-Help-Icon-Copy" transform="translate(1336.000000, 214.000000)">
+                <g id="Help-Icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke-opacity="0.2" stroke="#000000" stroke-width="0.7" d="M14,28.35 C6.07471384,28.35 -0.35,21.9252862 -0.35,14 C-0.35,6.07471384 6.07471384,-0.35 14,-0.35 C21.9252862,-0.35 28.35,6.07471384 28.35,14 C28.35,21.9252862 21.9252862,28.35 14,28.35 Z" fill="#FFFFFF" fill-rule="evenodd"></path>
+                </g>
+                <path d="M14,14.3749432 L14,14 C15.5463973,14 16.8,12.7463973 16.8,11.2 C16.8,9.6536027 15.5463973,8.4 14,8.4 C12.4536027,8.4 11.2,9.6536027 11.2,11.2 L11.1203373,11.2 C11.171928,11.3459635 11.2,11.5030368 11.2,11.6666667 C11.2,12.4398653 10.5731986,13.0666667 9.8,13.0666667 C9.02680135,13.0666667 8.4,12.4398653 8.4,11.6666667 C8.4,11.5030368 8.42807197,11.3459635 8.47966266,11.2 L8.4,11.2 C8.4,8.1072054 10.9072054,5.6 14,5.6 C17.0927946,5.6 19.6,8.1072054 19.6,11.2 C19.6,13.9747965 17.5818658,16.2782326 14.9333333,16.7225721 L14.9333333,18.2013291 C14.9333333,18.9793056 14.306532,19.6 13.5333333,19.6 C12.7547441,19.6 12.1333333,18.9731298 12.1333333,18.1998461 L12.1333333,16.3334872 C12.1333333,15.5627008 12.7307629,14.7341901 13.4677297,14.4885345 L13.598937,14.4447988 C13.7388701,14.3981544 13.873563,14.3756133 14,14.3749432 Z M12.1333333,21.9333333 C12.1333333,21.1601347 12.7547441,20.5333333 13.5333333,20.5333333 C14.306532,20.5333333 14.9333333,21.1547441 14.9333333,21.9333333 C14.9333333,22.706532 14.3119226,23.3333333 13.5333333,23.3333333 C12.7601347,23.3333333 12.1333333,22.7119226 12.1333333,21.9333333 Z" id="?" fill="#4A90E2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

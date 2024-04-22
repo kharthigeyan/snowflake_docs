@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="37px" viewBox="0 0 36 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Navigation-Account-Icon Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.99683887,0 L24.0031611,0 C26.2058797,0 28,1.79170204 28,4.00187852 L28,24.9981215 C28,27.2078053 26.2105543,29 24.0031611,29 L3.99683887,29 C1.79412025,29 0,27.208298 0,24.9981215 L0,4.00187852 C0,1.79219474 1.78944571,0 3.99683887,0 Z M11,2 L11,3 L17,3 L17,2 L11,2 Z" id="path-1"></path>
+        <filter x="-20.4%" y="-16.2%" width="140.7%" height="139.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.7" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="54.2454064%" y1="100%" x2="54.2454075%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M24.8298703,25 L25,25 L25,27 L3,27 L3,25 L3.17012966,25 C3.058733,24.7894009 3,24.5568238 3,24.3 C3,22.3113565 6.94405942,21.2002424 11,19.4523098 L11,16.9970436 C9.78648317,16.0833502 9,14.6296578 9,12.9924559 L9,10.0075441 C9,7.23477967 11.2385763,5 14,5 C16.7558048,5 19,7.24195386 19,10.0075441 L19,12.9924559 C19,14.6349917 18.2144467,16.0887399 17,17.0009763 L17,19.4523098 C21.0559406,21.2002424 25,22.3113565 25,24.3 C25,24.5568238 24.941267,24.7894009 24.8298703,25 Z" id="path-4"></path>
+    </defs>
+    <g id="Component-Library-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Library---WS-3.0" transform="translate(-1438.000000, -210.000000)">
+            <g id="Navigation-Account-Icon-Copy" transform="translate(1442.000000, 213.000000)">
+                <g id="Combined-Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <path stroke="#B7B4B4" stroke-width="0.7" d="M3.99683887,-0.35 L24.0031611,-0.35 C26.4008293,-0.35 28.35,1.60005302 28.35,4.00187852 L28.35,24.9981215 C28.35,27.4011698 26.4037895,29.35 24.0031611,29.35 L3.99683887,29.35 C1.59917067,29.35 -0.35,27.399947 -0.35,24.9981215 L-0.35,4.00187852 C-0.35,1.59883023 1.59621051,-0.35 3.99683887,-0.35 Z M11.35,2.35 L11.35,2.65 L16.65,2.65 L16.65,2.35 L11.35,2.35 Z" fill="#FFFFFF" fill-rule="evenodd"></path>
+                </g>
+                <g id="Oval-90-Copy-2">
+                    <use fill="#242424" xlink:href="#path-4"></use>
+                    <use fill-opacity="0.400000006" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Navigation-Database-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="4"></rect>
+        <filter x="-20.4%" y="-16.8%" width="140.7%" height="140.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.7" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="6.123234e-15%" x2="50%" y2="134.14917%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <path d="M7,17.8214857 L7,18.8 C7,20.5673143 10.135125,22 14,22 C17.864875,22 21,20.5673143 21,18.8 L21,17.8214857 C20.6082187,18.1437714 20.1289375,18.4278857 19.5849062,18.6715429 C18.1254063,19.3250286 16.1649687,19.7142857 14,19.7142857 C11.8350313,19.7142857 9.87459375,19.3250286 8.41509375,18.6715429 C7.8710625,18.4278857 7.39178125,18.1437714 7,17.8214857 L7,17.8214857 Z M7,14.6214857 L7,16.5001143 C7.380625,17.1094857 8.1764375,17.5611429 8.75678125,17.8285714 C10.0681875,18.416 11.9365312,18.8 14,18.8 C16.0634687,18.8 17.9318125,18.416 19.2432188,17.8285714 C19.8226875,17.5442286 20.6152188,17.1490286 21,16.4928 L21,14.6214857 C20.6082187,14.9437714 20.1289375,15.2278857 19.5849062,15.4715429 C18.1254063,16.1250286 16.1649687,16.5142857 14,16.5142857 C11.8350313,16.5142857 9.87459375,16.1250286 8.41509375,15.4715429 C7.8710625,15.2278857 7.39178125,14.9437714 7,14.6214857 L7,14.6214857 Z M7.00678125,11.4285714 L7.00678125,13.3072 C7.389375,13.9124571 8.1790625,14.3622857 8.75678125,14.6285714 C10.0681875,15.216 11.9365312,15.6 14,15.6 C16.0634687,15.6 17.9318125,15.216 19.2432187,14.6285714 C19.8226875,14.3442286 20.6152187,13.9490286 21,13.2928 L21,11.4285714 C20.6082187,11.7510857 20.1289375,12.0278857 19.5849062,12.2715429 C18.1254062,12.9250286 16.1649687,13.3142857 14,13.3142857 C11.8350312,13.3142857 9.87459375,12.9250286 8.41509375,12.2715429 C7.87303125,12.0288 7.3976875,11.7494857 7.00678125,11.4285714 Z M14,6 C10.1340312,6 7,7.43268571 7,9.2 C7,10.9673143 10.1340312,12.4 14,12.4 C17.8659688,12.4 21,10.9673143 21,9.2 C21,7.43268571 17.8659688,6 14,6 L14,6 Z" id="path-4"></path>
+    </defs>
+    <g id="Component-Library-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Library---WS-3.0" transform="translate(-1176.000000, -211.000000)">
+            <g id="Navigation-Database-Icon" transform="translate(1180.000000, 214.000000)">
+                <g id="Rectangle-408">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke="#B7B4B4" stroke-width="0.7" fill="#FFFFFF" fill-rule="evenodd" x="-0.35" y="-0.35" width="28.7" height="28.7" rx="4"></rect>
+                </g>
+                <g id="Fill-1">
+                    <use fill="#000000" xlink:href="#path-4"></use>
+                    <use fill-opacity="0.4" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

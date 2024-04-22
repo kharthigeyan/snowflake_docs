@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Navigation-Partner-Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="28" height="28" rx="14"></rect>
+        <filter x="-20.4%" y="-16.8%" width="140.7%" height="140.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.7" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.24 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Component-Library-active" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Component-Library---WS-3.0" transform="translate(-1594.000000, -211.000000)">
+            <g id="Navigation-Partner-Icon" transform="translate(1598.000000, 214.000000)">
+                <g id="Rectangle-409">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <rect stroke-opacity="0.2" stroke="#000000" stroke-width="0.7" fill="#FFFFFF" fill-rule="evenodd" x="-0.35" y="-0.35" width="28.7" height="28.7" rx="14.35"></rect>
+                </g>
+                <path d="M21.3636552,9.76375159 L21.3636552,12.3658251 C21.3636552,13.7200772 20.2646207,14.8176558 18.9090345,14.8176558 L16.304,14.8176558 C15.962,15.7780112 15.0595172,16.4529673 14,16.4529673 C12.9404828,16.4529673 12.038,15.7780112 11.7009655,14.8348087 L9.5,14.8176558 C8.82262069,14.8176558 8.27268966,15.3667551 8.27268966,16.0435711 L8.27268966,18.2370751 C9.23413793,18.5836462 9.90903448,19.4873764 9.90903448,20.548376 C9.90903448,21.9024214 8.8102069,23 7.45441379,23 C6.09882759,23 5,21.9024214 5,20.548376 C5,19.4873764 5.67489655,18.5836462 6.61917241,18.2418283 L6.63634483,15.6341749 C6.63634483,14.2799228 7.73517241,13.1823442 9.09096552,13.1823442 L11.6957931,13.1823442 C12.038,12.2221954 12.9404828,11.5470327 14,11.5470327 C15.0595172,11.5470327 15.962,12.2221954 16.2990345,13.1651913 L18.5,13.1823442 C19.1775862,13.1823442 19.7273103,12.6332449 19.7273103,11.9564289 L19.7273103,9.76292495 C18.7658621,9.4163538 18.0909655,8.51262357 18.0909655,7.45183068 C18.0909655,6.09757862 19.1895862,5 20.5453793,5 C21.9011724,5 23,6.09757862 23,7.45183068 C23,8.51262357 22.3248966,9.4163538 21.3808276,9.75817174 L21.3636552,9.76375159 Z" id="Fill-1" fill="#00BBE6"></path>
+            </g>
+        </g>
+    </g>
+</svg>
