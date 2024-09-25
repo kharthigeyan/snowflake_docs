@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.types.ShortType
+   Snowpark 1.14.0  - com.snowflake.snowpark.types.ShortType
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.types.ShortType" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.types.ShortType" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.types.ShortType" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.types.ShortType" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="https://docs.snowflake.com/en/developer-guide/snowpark/scala/index.html" id="dev-guide-link">

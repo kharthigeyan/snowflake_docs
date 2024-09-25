@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.Session
+   Snowpark 1.14.0  - com.snowflake.snowpark.Session
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.Session" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.Session" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.Session" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.Session" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="../../../../../scala/index.html" id="dev-guide-link">
@@ -6380,6 +6380,123 @@ method in your code that invoked the query (e.g.
               <p>
                0.10.0
               </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.Session#updateQueryTag" visbl="pub">
+           <a id="updateQueryTag(queryTag:String):Unit">
+           </a>
+           <a id="updateQueryTag(String):Unit">
+           </a>
+           <span class="permalink">
+            <a href="Session.html#updateQueryTag(queryTag:String):Unit" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             updateQueryTag
+            </span>
+            <span class="params">
+             (
+             <span name="queryTag">
+              queryTag:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="scala.Unit">
+              Unit
+             </span>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Updates the query tag that is a JSON encoded string for the current session.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Updates the query tag that is a JSON encoded string for the current session.
+             </p>
+             <p>
+              Keep in mind that assigning a value via
+              <a class="extmbr" href="Session.html#setQueryTag(queryTag:String):Unit" name="com.snowflake.snowpark.Session#setQueryTag">
+               setQueryTag
+              </a>
+              will remove any current query tag
+state.
+             </p>
+             <p>
+              Example 1:
+             </p>
+             <pre>session.setQueryTag(<span class="lit">""</span><span class="lit">"{"</span>key1<span class="lit">":"</span>value1<span class="lit">"}"</span><span class="lit">""</span>)
+session.updateQueryTag(<span class="lit">""</span><span class="lit">"{"</span>key2<span class="lit">":"</span>value2<span class="lit">"}"</span><span class="lit">""</span>)
+print(session.getQueryTag().get)
+{<span class="lit">"key1"</span>:<span class="lit">"value1"</span>,<span class="lit">"key2"</span>:<span class="lit">"value2"</span>}</pre>
+             <p>
+              Example 2:
+             </p>
+             <pre>session.sql(<span class="lit">""</span><span class="lit">"ALTER SESSION SET QUERY_TAG = '{"</span>key1<span class="lit">":"</span>value1<span class="lit">"}'"</span><span class="lit">""</span>).collect()
+session.updateQueryTag(<span class="lit">""</span><span class="lit">"{"</span>key2<span class="lit">":"</span>value2<span class="lit">"}"</span><span class="lit">""</span>)
+print(session.getQueryTag().get)
+{<span class="lit">"key1"</span>:<span class="lit">"value1"</span>,<span class="lit">"key2"</span>:<span class="lit">"value2"</span>}</pre>
+             <p>
+              Example 3:
+             </p>
+             <pre>session.setQueryTag(<span class="lit">""</span>)
+session.updateQueryTag(<span class="lit">""</span><span class="lit">"{"</span>key1<span class="lit">":"</span>value1<span class="lit">"}"</span><span class="lit">""</span>)
+print(session.getQueryTag().get)
+{<span class="lit">"key1"</span>:<span class="lit">"value1"</span>}</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              queryTag
+             </dt>
+             <dd class="cmt">
+              <p>
+               A JSON encoded string that provides updates to the current query tag.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
+              </p>
+             </dd>
+             <dt>
+              Exceptions thrown
+             </dt>
+             <dd>
+              <span class="cmt">
+               <p>
+                <a class="extype" href="SnowparkClientException.html" name="com.snowflake.snowpark.SnowparkClientException">
+                 <code>
+                  SnowparkClientException
+                 </code>
+                </a>
+                If the provided query tag or the query tag of the current
+                                session are not valid JSON strings; or if it could not
+                                serialize the query tag into a JSON string.
+               </p>
+              </span>
              </dd>
             </dl>
            </div>

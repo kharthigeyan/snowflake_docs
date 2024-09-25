@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.SProcRegistration
+   Snowpark 1.14.0  - com.snowflake.snowpark.SProcRegistration
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.SProcRegistration" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.SProcRegistration" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.SProcRegistration" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.SProcRegistration" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="https://docs.snowflake.com/en/developer-guide/snowpark/scala/index.html" id="dev-guide-link">
@@ -2284,22 +2284,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -2811,22 +2795,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -3318,22 +3286,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -3805,22 +3757,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -4272,22 +4208,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -4719,22 +4639,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -5146,22 +5050,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -5553,22 +5441,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -5940,22 +5812,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -6307,22 +6163,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -6654,22 +6494,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -6981,22 +6805,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -7288,22 +7096,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -7575,22 +7367,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -7842,22 +7618,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -8089,22 +7849,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -8316,22 +8060,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -8523,22 +8251,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -8710,22 +8422,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -8877,22 +8573,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -9024,22 +8704,6 @@ of executing a SP function with these test function and on Snowflake server may 
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerPermanent" visbl="pub">
@@ -9149,22 +8813,6 @@ of executing a SP function with these test function and on Snowflake server may 
               <p>
                Return type of the UDF.
               </p>
-             </dd>
-            </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
              </dd>
             </dl>
            </div>
@@ -9686,22 +9334,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -10201,22 +9833,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -10696,22 +10312,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -11171,22 +10771,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -11626,22 +11210,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -12061,22 +11629,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -12476,22 +12028,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -12871,22 +12407,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -13246,22 +12766,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -13601,22 +13105,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -13936,22 +13424,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -14251,22 +13723,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -14546,22 +14002,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -14821,22 +14261,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -15076,22 +14500,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -15311,22 +14719,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -15526,22 +14918,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -15721,22 +15097,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -15896,22 +15256,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -16051,22 +15395,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -16186,22 +15514,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -16299,22 +15611,6 @@ scoped to this session.
               <p>
                Return type of the UDF.
               </p>
-             </dd>
-            </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
              </dd>
             </dl>
            </div>
@@ -16829,22 +16125,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -17337,22 +16617,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -17825,22 +17089,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -18293,22 +17541,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -18741,22 +17973,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -19169,22 +18385,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -19577,22 +18777,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -19965,22 +19149,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -20333,22 +19501,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -20681,22 +19833,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -21009,22 +20145,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -21317,22 +20437,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -21605,22 +20709,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -21873,22 +20961,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -22121,22 +21193,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -22349,22 +21405,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -22557,22 +21597,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -22745,22 +21769,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -22913,22 +21921,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -23061,22 +22053,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -23189,22 +22165,6 @@ scoped to this session.
               </p>
              </dd>
             </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
-             </dd>
-            </dl>
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#registerTemporary" visbl="pub">
@@ -23295,22 +22255,6 @@ scoped to this session.
               <p>
                Return type of the UDF.
               </p>
-             </dd>
-            </dl>
-            <dl class="attributes block">
-             <dt>
-              Annotations
-             </dt>
-             <dd>
-              <span class="name">
-               @
-               <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
-                PublicPreview
-               </a>
-              </span>
-              <span class="args">
-               ()
-              </span>
              </dd>
             </dl>
            </div>
@@ -32008,6 +30952,100 @@ on Snowflake server may be different too.
                <a class="extype" href="PublicPreview.html" name="com.snowflake.snowpark.PublicPreview">
                 PublicPreview
                </a>
+              </span>
+              <span class="args">
+               ()
+              </span>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.SProcRegistration#sproc" visbl="prt">
+           <a id="sproc(funcName:String,execName:String,execFilePath:String)(func:=&gt;com.snowflake.snowpark.StoredProcedure):com.snowflake.snowpark.StoredProcedure">
+           </a>
+           <a id="sproc(String,String,String)(⇒StoredProcedure):StoredProcedure">
+           </a>
+           <span class="permalink">
+            <a href="../../../com/snowflake/snowpark/SProcRegistration.html#sproc(funcName:String,execName:String,execFilePath:String)(func:=&gt;com.snowflake.snowpark.StoredProcedure):com.snowflake.snowpark.StoredProcedure" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             sproc
+            </span>
+            <span class="params">
+             (
+             <span name="funcName">
+              funcName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="execName">
+              execName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+              =
+              <span class="symbol">
+               ""
+              </span>
+             </span>
+             ,
+             <span name="execFilePath">
+              execFilePath:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+              =
+              <span class="symbol">
+               ""
+              </span>
+             </span>
+             )
+            </span>
+            <span class="params">
+             (
+             <span name="func">
+              func: ⇒
+              <a class="extype" href="StoredProcedure.html" name="com.snowflake.snowpark.StoredProcedure">
+               StoredProcedure
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="StoredProcedure.html" name="com.snowflake.snowpark.StoredProcedure">
+              StoredProcedure
+             </a>
+            </span>
+           </span>
+           <div class="fullcomment">
+            <dl class="attributes block">
+             <dt>
+              Attributes
+             </dt>
+             <dd>
+              protected
+             </dd>
+             <dt>
+              Annotations
+             </dt>
+             <dd>
+              <span class="name">
+               @inline
               </span>
               <span class="args">
                ()

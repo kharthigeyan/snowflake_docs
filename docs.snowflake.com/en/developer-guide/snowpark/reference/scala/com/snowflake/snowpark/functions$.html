@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.functions
+   Snowpark 1.14.0  - com.snowflake.snowpark.functions
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.functions" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.functions" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.functions" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.functions" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="../../../../../scala/index.html" id="dev-guide-link">
@@ -1816,6 +1816,104 @@ APPROX_PERCENTILE(.).
              <dd>
               <p>
                0.2.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#array" visbl="pub">
+           <a id="array(c:com.snowflake.snowpark.Column*):com.snowflake.snowpark.Column">
+           </a>
+           <a id="array(Column*):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#array(c:com.snowflake.snowpark.Column*):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             array
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+              *
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns an ARRAY constructed from zero, one, or more inputs.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns an ARRAY constructed from zero, one, or more inputs.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>), (<span class="num">4</span>, <span class="num">5</span>, <span class="num">6</span>))).toDF(<span class="lit">"id"</span>)
+  df.select(array(col(<span class="lit">"a"</span>), col(<span class="lit">"b"</span>)).as(<span class="lit">"id"</span>)).show()
+
+ --------
+|<span class="lit">"ID"</span>  |
+--------
+|[     |
+|  <span class="num">1</span>,  |
+|  <span class="num">2</span>   |
+|]     |
+|[     |
+|  <span class="num">4</span>,  |
+|  <span class="num">5</span>   |
+|]     |
+--------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Columns to build the array.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The array.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -4319,6 +4417,96 @@ with precision.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#asc" visbl="pub">
+           <a id="asc(colName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="asc(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#asc(colName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             asc
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns a Column expression with values sorted in ascending order.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns a Column expression with values sorted in ascending order.
+Example:
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">3</span>, <span class="num">2</span>, <span class="num">1</span>)).toDF(<span class="lit">"id"</span>)
+  df.sort(asc(<span class="lit">"id"</span>)).show()
+
+--------
+|<span class="lit">"ID"</span>  |
+--------
+|<span class="num">1</span>     |
+|<span class="num">2</span>     |
+|<span class="num">3</span>     |
+--------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              colName
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column name.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object ordered in an ascending manner.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="str_func" name="com.snowflake.snowpark.functions#ascii" visbl="pub">
            <a id="ascii(e:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -4632,6 +4820,86 @@ the function returns NULL.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#base64" visbl="pub">
+           <a id="base64(col:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="base64(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#base64(col:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             base64
+            </span>
+            <span class="params">
+             (
+             <span name="col">
+              col:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes the BASE64 encoding of a column and returns it as a string column.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes the BASE64 encoding of a column and returns it as a string column.
+This is the reverse of unbase64.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="lit">"test"</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(base64(col(<span class="lit">"a"</span>)).as(<span class="lit">"base64"</span>)).show()
+------------
+|<span class="lit">"BASE64"</span>  |
+------------
+|dGVzdA==  |
+------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               base64 encoded value of the given input column.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -5824,6 +6092,202 @@ instead of the original collation specification property.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#collect_list" visbl="pub">
+           <a id="collect_list(s:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="collect_list(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#collect_list(s:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             collect_list
+            </span>
+            <span class="params">
+             (
+             <span name="s">
+              s:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the input values, pivoted into an ARRAY.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the input values, pivoted into an ARRAY. If the input is empty, an empty
+ARRAY is returned.
+             </p>
+             <p>
+              Example::
+    &gt;&gt;&gt; df = session.create_dataframe(
+              <span class="extype" name="1],">
+               [2], [3], [1
+              </span>
+              , schema=["a"])
+    &gt;&gt;&gt; df.select(array_agg("a", True).alias("result")).show()
+    ------------
+    |"RESULT"  |
+    ------------
+    |[         |
+    |  1,      |
+    |  2,      |
+    |  3       |
+    |]         |
+    ------------
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              s
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column name to be collected.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The array.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#collect_list" visbl="pub">
+           <a id="collect_list(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="collect_list(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#collect_list(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             collect_list
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the input values, pivoted into an ARRAY.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the input values, pivoted into an ARRAY. If the input is empty, an empty
+ARRAY is returned.
+&lt;pr&gt;
+Example::
+    &gt;&gt;&gt; df = session.create_dataframe(
+              <span class="extype" name="1],">
+               [2], [3], [1
+              </span>
+              , schema=["a"])
+    &gt;&gt;&gt; df.select(array_agg("a", True).alias("result")).show()
+    ------------
+    |"RESULT"  |
+    ------------
+    |[         |
+    |  1,      |
+    |  2,      |
+    |  3       |
+    |]         |
+    ------------
+&lt;/pr&gt;
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to be collect.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The array.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="client_func" name="com.snowflake.snowpark.functions#column" visbl="pub">
            <a id="column(colName:String):com.snowflake.snowpark.Column">
            </a>
@@ -6505,6 +6969,148 @@ or the total number of records.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="agg_func" name="com.snowflake.snowpark.functions#countDistinct" visbl="pub">
+           <a id="countDistinct(expr:com.snowflake.snowpark.Column,exprs:com.snowflake.snowpark.Column*):com.snowflake.snowpark.Column">
+           </a>
+           <a id="countDistinct(Column,Column*):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#countDistinct(expr:com.snowflake.snowpark.Column,exprs:com.snowflake.snowpark.Column*):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             countDistinct
+            </span>
+            <span class="params">
+             (
+             <span name="expr">
+              expr:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="exprs">
+              exprs:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+              *
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns either the number of non-NULL distinct records for the specified columns,
+or the total number of the distinct records.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns either the number of non-NULL distinct records for the specified columns,
+or the total number of the distinct records. An alias of count_distinct.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="agg_func" name="com.snowflake.snowpark.functions#countDistinct" visbl="pub">
+           <a id="countDistinct(colName:String,colNames:String*):com.snowflake.snowpark.Column">
+           </a>
+           <a id="countDistinct(String,String*):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#countDistinct(colName:String,colNames:String*):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             countDistinct
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="colNames">
+              colNames:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+              *
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns either the number of non-NULL distinct records for the specified columns,
+or the total number of the distinct records.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns either the number of non-NULL distinct records for the specified columns,
+or the total number of the distinct records. An alias of count_distinct.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
               </p>
              </dd>
             </dl>
@@ -7585,6 +8191,111 @@ to the present connection.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#date_format" visbl="pub">
+           <a id="date_format(c:com.snowflake.snowpark.Column,s:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="date_format(Column,String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#date_format(c:com.snowflake.snowpark.Column,s:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             date_format
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="s">
+              s:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Converts an input expression into the corresponding date in the specified date format.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Converts an input expression into the corresponding date in the specified date format.
+Example:
+             </p>
+             <pre> <span class="kw">val</span> df = <span class="std">Seq</span>(<span class="lit">"2023-10-10"</span>, <span class="lit">"2022-05-15"</span>, <span class="kw">null</span>.asInstanceOf[<span class="std">String</span>]).toDF(<span class="lit">"date"</span>)
+ df.select(date_format(col(<span class="lit">"date"</span>), <span class="lit">"YYYY/MM/DD"</span>).as(<span class="lit">"formatted_date"</span>)).show()
+
+--------------------
+|<span class="lit">"FORMATTED_DATE"</span>  |
+--------------------
+|<span class="num">2023</span>/<span class="num">10</span>/<span class="num">10</span>        |
+|<span class="num">2022</span>/<span class="num">05</span>/<span class="num">15</span>        |
+|NULL              |
+--------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to format to date.
+              </p>
+             </dd>
+             <dt class="param">
+              s
+             </dt>
+             <dd class="cmt">
+              <p>
+               Date format.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="date_func" name="com.snowflake.snowpark.functions#date_from_parts" visbl="pub">
            <a id="date_from_parts(year:com.snowflake.snowpark.Column,month:com.snowflake.snowpark.Column,day:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -8263,6 +8974,47 @@ If two values are the same, they will have the same rank.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="no" group="Ungrouped" name="com.snowflake.snowpark.functions#desc" visbl="pub">
+           <a id="desc(colName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="desc(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#desc(colName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             desc
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="num_func" name="com.snowflake.snowpark.functions#div0" visbl="pub">
            <a id="div0(dividend:com.snowflake.snowpark.Column,divisor:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -8621,6 +9373,107 @@ but returns 0 when the divisor is 0 (rather than reporting an error).
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#expr" visbl="pub">
+           <a id="expr(s:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="expr(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#expr(s:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             expr
+            </span>
+            <span class="params">
+             (
+             <span name="s">
+              s:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Creates a
+            <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+             Column
+            </a>
+            expression from raw SQL text.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Creates a
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+              expression from raw SQL text.
+             </p>
+             <p>
+              Note that the function does not interpret or check the SQL text.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="std">Array</span>(<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>))).toDF(<span class="lit">"id"</span>)
+ df.filter(expr(<span class="lit">"id &gt; 2"</span>)).show()
+
+--------
+|<span class="lit">"ID"</span>  |
+--------
+|<span class="num">3</span>     |
+--------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              s
+             </dt>
+             <dd class="cmt">
+              <p>
+               SQL Expression as text.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Converted SQL Expression.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -9318,6 +10171,95 @@ the result is NULL. GREATEST supports all data types, including VARIANT.
               <span class="args">
                ()
               </span>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#hex" visbl="pub">
+           <a id="hex(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="hex(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#hex(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             hex
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes hex value of the given column.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes hex value of the given column.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>), (<span class="num">2</span>), (<span class="num">3</span>))).toDF(<span class="lit">"a"</span>)
+  df.withColumn(<span class="lit">"hex_col"</span>, hex(col(<span class="lit">"A"</span>))).select(<span class="lit">"hex_col"</span>).show()
+-------------
+|<span class="lit">"HEX_COL"</span>  |
+-------------
+|<span class="num">31</span>         |
+|<span class="num">32</span>         |
+|<span class="num">33</span>         |
+-------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to encode.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Encoded string.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
              </dd>
             </dl>
            </div>
@@ -11076,6 +12018,93 @@ using the local time zone.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#isnull" visbl="pub">
+           <a id="isnull(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="isnull(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#isnull(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             isnull
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Wrapper for Snowflake built-in isnull function.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Wrapper for Snowflake built-in isnull function. Gets a boolean
+depending if value is NULL or not.
+Return true if the value in the column is null.
+Example::
+&gt;&gt;&gt; from snowflake.snowpark.functions import is_null
+&gt;&gt;&gt; df = session.create_dataframe([1.2, float("nan"), None, 1.0],
+ schema=["a"])
+&gt;&gt;&gt; df.select(is_null("a").as_("a")).collect()
+[Row(A=False), Row(A=False), Row(A=True), Row(A=False)]
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to qnalize if it is null value.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="semi_func" name="com.snowflake.snowpark.functions#json_extract_path_text" visbl="pub">
            <a id="json_extract_path_text(col:com.snowflake.snowpark.Column,path:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -11431,6 +12460,101 @@ join the table to itself.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#last" visbl="pub">
+           <a id="last(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="last(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#last(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             last
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the last value of the column in a group.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the last value of the column in a group.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">5</span>, <span class="lit">"a"</span>, <span class="num">10</span>),
+                                      (<span class="num">5</span>, <span class="lit">"b"</span>, <span class="num">20</span>),
+                                      (<span class="num">3</span>, <span class="lit">"d"</span>, <span class="num">15</span>),
+                                      (<span class="num">3</span>, <span class="lit">"e"</span>, <span class="num">40</span>))).toDF(<span class="lit">"grade"</span>, <span class="lit">"name"</span>, <span class="lit">"score"</span>)
+    <span class="kw">val</span> window = Window.partitionBy(col(<span class="lit">"grade"</span>)).orderBy(col(<span class="lit">"score"</span>).desc)
+    df.select(last(col(<span class="lit">"name"</span>)).over(window)).show()
+
+---------------------
+|<span class="lit">"LAST_SCORE_NAME"</span>  |
+---------------------
+|a                  |
+|a                  |
+|d                  |
+|d                  |
+---------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to obtain last value.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -12272,6 +13396,266 @@ df.select(listagg(df.col(<span class="lit">"col2"</span>), <span class="lit">","
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#locate" visbl="pub">
+           <a id="locate(substr:String,str:com.snowflake.snowpark.Column,pos:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="locate(String,Column,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#locate(substr:String,str:com.snowflake.snowpark.Column,pos:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             locate
+            </span>
+            <span class="params">
+             (
+             <span name="substr">
+              substr:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="str">
+              str:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="pos">
+              pos:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+              =
+              <span class="symbol">
+               1
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Locate the position of the first occurrence of substr in a string column, after position pos.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Locate the position of the first occurrence of substr in a string column, after position pos.
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              substr
+             </dt>
+             <dd class="cmt">
+              <p>
+               string to search
+              </p>
+             </dd>
+             <dt class="param">
+              str
+             </dt>
+             <dd class="cmt">
+              <p>
+               value where string will be searched
+              </p>
+             </dd>
+             <dt class="param">
+              pos
+             </dt>
+             <dd class="cmt">
+              <p>
+               index for starting the search. default to 1.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Returns the position of the first occurrence
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+             <dt>
+              Note
+             </dt>
+             <dd>
+              <span class="cmt">
+               <p>
+                The position is not zero based, but 1 based index. returns 0 if substr
+could not be found in str. This function is just leverages the SF POSITION builtin
+Example
+               </p>
+               <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="lit">"java scala python"</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(locate(<span class="lit">"scala"</span>, col(<span class="lit">"a"</span>)).as(<span class="lit">"locate"</span>)).show()
+------------
+|<span class="lit">"LOCATE"</span>  |
+------------
+|<span class="num">6</span>         |
+------------</pre>
+              </span>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#locate" visbl="pub">
+           <a id="locate(substr:com.snowflake.snowpark.Column,str:com.snowflake.snowpark.Column,pos:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="locate(Column,Column,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#locate(substr:com.snowflake.snowpark.Column,str:com.snowflake.snowpark.Column,pos:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             locate
+            </span>
+            <span class="params">
+             (
+             <span name="substr">
+              substr:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="str">
+              str:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="pos">
+              pos:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Locate the position of the first occurrence of substr in a string column, after position pos.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Locate the position of the first occurrence of substr in a string column, after position pos.
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              substr
+             </dt>
+             <dd class="cmt">
+              <p>
+               string to search
+              </p>
+             </dd>
+             <dt class="param">
+              str
+             </dt>
+             <dd class="cmt">
+              <p>
+               value where string will be searched
+              </p>
+             </dd>
+             <dt class="param">
+              pos
+             </dt>
+             <dd class="cmt">
+              <p>
+               index for starting the search
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               returns the position of the first occurrence.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+             <dt>
+              Note
+             </dt>
+             <dd>
+              <span class="cmt">
+               <p>
+                The position is not zero based, but 1 based index. returns 0 if substr
+could not be found in str. This function is just leverages the SF POSITION builtin
+Example
+               </p>
+               <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="lit">"b"</span>, <span class="lit">"abcd"</span>))).toDF(<span class="lit">"a"</span>, <span class="lit">"b"</span>)
+ df.select(locate(col(<span class="lit">"a"</span>), col(<span class="lit">"b"</span>), <span class="num">1</span>).as(<span class="lit">"locate"</span>)).show()
+------------
+|<span class="lit">"LOCATE"</span>  |
+------------
+|<span class="num">2</span>         |
+------------</pre>
+              </span>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="num_func" name="com.snowflake.snowpark.functions#log" visbl="pub">
            <a id="log(base:com.snowflake.snowpark.Column,a:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -12335,6 +13719,355 @@ df.select(listagg(df.col(<span class="lit">"col2"</span>), <span class="lit">","
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#log10" visbl="pub">
+           <a id="log10(columnName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="log10(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#log10(columnName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             log10
+            </span>
+            <span class="params">
+             (
+             <span name="columnName">
+              columnName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes the logarithm of the given column in base 10.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes the logarithm of the given column in base 10.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">100</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(log10(<span class="lit">"a"</span>))).show()
+-----------
+|<span class="lit">"LOG10"</span>  |
+-----------
+|<span class="num">2.0</span>      |
+-----------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              columnName
+             </dt>
+             <dd class="cmt">
+              <p>
+               ColumnName in String to apply logarithm operation
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               log10 of the given column
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#log10" visbl="pub">
+           <a id="log10(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="log10(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#log10(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             log10
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes the logarithm of the given value in base 10.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes the logarithm of the given value in base 10.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">100</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(log10(col(<span class="lit">"a"</span>))).show()
+
+-----------
+|<span class="lit">"LOG10"</span>  |
+-----------
+|<span class="num">2.0</span>      |
+-----------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to apply logarithm operation
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               log10 of the given column
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#log1p" visbl="pub">
+           <a id="log1p(columnName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="log1p(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#log1p(columnName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             log1p
+            </span>
+            <span class="params">
+             (
+             <span name="columnName">
+              columnName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes the natural logarithm of the given value plus one.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes the natural logarithm of the given value plus one.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">0.1</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(log1p(<span class="lit">"a"</span>).as(<span class="lit">"log1p"</span>)).show()
+-----------------------
+|<span class="lit">"LOG1P"</span>              |
+-----------------------
+|<span class="num">0.09531017980432493</span>  |
+-----------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              columnName
+             </dt>
+             <dd class="cmt">
+              <p>
+               ColumnName in String to apply logarithm operation
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               the natural logarithm of the given value plus one.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#log1p" visbl="pub">
+           <a id="log1p(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="log1p(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#log1p(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             log1p
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Computes the natural logarithm of the given value plus one.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Computes the natural logarithm of the given value plus one.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">0.1</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(log1p(col(<span class="lit">"a"</span>)).as(<span class="lit">"log1p"</span>)).show()
+-----------------------
+|<span class="lit">"LOG1P"</span>              |
+-----------------------
+|<span class="num">0.09531017980432493</span>  |
+-----------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to apply logarithm operation
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               the natural logarithm of the given value plus one.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -12669,6 +14402,97 @@ the records are NULL, in which case a NULL value is returned.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="agg_func" name="com.snowflake.snowpark.functions#max" visbl="pub">
+           <a id="max(colName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="max(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#max(colName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             max
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the maximum value for the records in a group.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the maximum value for the records in a group. NULL values are ignored unless all
+the records are NULL, in which case a NULL value is returned.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">1</span>, <span class="num">3</span>, <span class="num">10</span>, <span class="num">1</span>, <span class="num">3</span>)).toDF(<span class="lit">"x"</span>)
+df.select(max(<span class="lit">"x"</span>)).show()
+
+----------------
+|<span class="lit">"MAX("</span><span class="lit">"X"</span><span class="lit">")"</span>  |
+----------------
+|<span class="num">10</span>            |
+----------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              colName
+             </dt>
+             <dd class="cmt">
+              <p>
+               The name of the column
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The maximum value of the given column
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="str_func" name="com.snowflake.snowpark.functions#md5" visbl="pub">
            <a id="md5(e:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -12787,6 +14611,97 @@ the function returns NULL. Alias of avg
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="agg_func" name="com.snowflake.snowpark.functions#mean" visbl="pub">
+           <a id="mean(colName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="mean(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#mean(colName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             mean
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the average of non-NULL records.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the average of non-NULL records. If all records inside a group are NULL,
+the function returns NULL. Alias of avg.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">1</span>, <span class="num">3</span>, <span class="num">10</span>, <span class="num">1</span>, <span class="num">3</span>)).toDF(<span class="lit">"x"</span>)
+df.select(mean(<span class="lit">"x"</span>)).show()
+
+----------------
+|<span class="lit">"AVG("</span><span class="lit">"X"</span><span class="lit">")"</span>  |
+----------------
+|<span class="num">3.600000</span>      |
+----------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              colName
+             </dt>
+             <dd class="cmt">
+              <p>
+               The name of the column
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The average value of the given column
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
               </p>
              </dd>
             </dl>
@@ -12911,6 +14826,97 @@ the records are NULL, in which case a NULL value is returned.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="agg_func" name="com.snowflake.snowpark.functions#min" visbl="pub">
+           <a id="min(colName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="min(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#min(colName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             min
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the minimum value for the records in a group.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the minimum value for the records in a group. NULL values are ignored unless all
+the records are NULL, in which case a NULL value is returned.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="num">1</span>, <span class="num">3</span>, <span class="num">10</span>, <span class="num">1</span>, <span class="num">3</span>)).toDF(<span class="lit">"x"</span>)
+df.select(min(<span class="lit">"x"</span>)).show()
+
+----------------
+|<span class="lit">"MIN("</span><span class="lit">"X"</span><span class="lit">")"</span>  |
+----------------
+|<span class="num">1</span>             |
+----------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              colName
+             </dt>
+             <dd class="cmt">
+              <p>
+               The name of the column
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               The minimum value of the given column
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
               </p>
              </dd>
             </dl>
@@ -13457,6 +15463,115 @@ the records are NULL, in which case a NULL value is returned.
               <span class="args">
                ()
               </span>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#ntile" visbl="pub">
+           <a id="ntile(n:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="ntile(Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#ntile(n:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             ntile
+            </span>
+            <span class="params">
+             (
+             <span name="n">
+              n:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Window function: returns the ntile group id (from 1 to
+            <code>
+             n
+            </code>
+            inclusive) in an ordered window
+partition.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Window function: returns the ntile group id (from 1 to
+              <code>
+               n
+              </code>
+              inclusive) in an ordered window
+partition. For example, if
+              <code>
+               n
+              </code>
+              is 4, the first quarter of the rows will get value 1, the second
+quarter will get 2, the third quarter will get 3, and the last quarter will get 4.
+             </p>
+             <p>
+              This is equivalent to the NTILE function in SQL.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = <span class="std">Seq</span>((<span class="num">5</span>, <span class="num">15</span>), (<span class="num">5</span>, <span class="num">15</span>), (<span class="num">5</span>, <span class="num">15</span>), (<span class="num">5</span>, <span class="num">20</span>)).toDF(<span class="lit">"grade"</span>, <span class="lit">"score"</span>)
+  <span class="kw">val</span> window = Window.partitionBy(col(<span class="lit">"grade"</span>)).orderBy(col(<span class="lit">"score"</span>))
+  df.select(ntile(<span class="num">2</span>).over(window).as(<span class="lit">"ntile"</span>)).show()
+-----------
+|<span class="lit">"NTILE"</span>  |
+-----------
+|<span class="num">1</span>        |
+|<span class="num">1</span>        |
+|<span class="num">2</span>        |
+|<span class="num">2</span>        |
+-----------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              n
+             </dt>
+             <dd class="cmt">
+              <p>
+               number of groups
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               returns the ntile group id (from 1 to n inclusive) in an ordered window partition.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
              </dd>
             </dl>
            </div>
@@ -14476,6 +16591,177 @@ ranging from 0.0 to 1.0.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#randn" visbl="pub">
+           <a id="randn(seed:Long):com.snowflake.snowpark.Column">
+           </a>
+           <a id="randn(Long):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#randn(seed:Long):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             randn
+            </span>
+            <span class="params">
+             (
+             <span name="seed">
+              seed:
+              <span class="extype" name="scala.Long">
+               Long
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Generate a column with independent and identically distributed (i.i.d.) samples
+from the standard normal distribution.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Generate a column with independent and identically distributed (i.i.d.) samples
+from the standard normal distribution.
+Calls to the Snowflake RANDOM function.
+NOTE: Snowflake returns integers of 17-19 digits.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>), (<span class="num">2</span>), (<span class="num">3</span>))).toDF(<span class="lit">"a"</span>)
+  df.withColumn(<span class="lit">"randn_with_seed"</span>, randn(<span class="num">123</span>L)).select(<span class="lit">"randn_with_seed"</span>).show()
+------------------------
+|<span class="lit">"RANDN_WITH_SEED"</span>     |
+------------------------
+|<span class="num">5777523539921853504</span>   |
+|-<span class="num">8190739547906189845</span>  |
+|-<span class="num">1138438814981368515</span>  |
+------------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              seed
+             </dt>
+             <dd class="cmt">
+              <p>
+               Seed to use in the random function.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Random number.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#randn" visbl="pub">
+           <a id="randn():com.snowflake.snowpark.Column">
+           </a>
+           <a id="randn():Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#randn():com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             randn
+            </span>
+            <span class="params">
+             ()
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Generate a column with independent and identically distributed (i.i.d.) samples
+from the standard normal distribution.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Generate a column with independent and identically distributed (i.i.d.) samples
+from the standard normal distribution.
+Return a call to the Snowflake RANDOM function.
+NOTE: Snowflake returns integers of 17-19 digits.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>), (<span class="num">2</span>), (<span class="num">3</span>))).toDF(<span class="lit">"a"</span>)
+  df.withColumn(<span class="lit">"randn"</span>, randn()).select(<span class="lit">"randn"</span>).show()
+------------------------
+|<span class="lit">"RANDN"</span>               |
+------------------------
+|-<span class="num">2093909082984812541</span>  |
+|-<span class="num">1379817492278593383</span>  |
+|-<span class="num">1231198046297539927</span>  |
+------------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Random number.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="gen_func" name="com.snowflake.snowpark.functions#random" visbl="pub">
            <a id="random():com.snowflake.snowpark.Column">
            </a>
@@ -14815,6 +17101,133 @@ The rank value starts at 1 and continues up.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#regexp_extract" visbl="pub">
+           <a id="regexp_extract(colName:com.snowflake.snowpark.Column,exp:String,position:Int,Occurences:Int,grpIdx:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="regexp_extract(Column,String,Int,Int,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#regexp_extract(colName:com.snowflake.snowpark.Column,exp:String,position:Int,Occurences:Int,grpIdx:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             regexp_extract
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="exp">
+              exp:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="position">
+              position:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             ,
+             <span name="Occurences">
+              Occurences:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             ,
+             <span name="grpIdx">
+              grpIdx:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Signature - snowflake.snowpark.functions.regexp_extract
+(value: Union[Column, str], regexp: Union[Column, str], idx: int)
+  Column
+Extract a specific group matched by a regex, from the specified string
+column.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Signature - snowflake.snowpark.functions.regexp_extract
+(value: Union[Column, str], regexp: Union[Column, str], idx: int)
+  Column
+Extract a specific group matched by a regex, from the specified string
+column. If the regex did not match, or the specified group did not match,
+an empty string is returned.
+&lt;pr&gt;Example:
+from snowflake.snowpark.functions import regexp_extract
+df = session.createDataFrame(
+              <span class="extype" name='"id_20_30",'>
+               10], ["id_40_50", 30
+              </span>
+              ,
+ ["id", "age"])
+df.select(regexp_extract("id", r"(\d+)", 1).alias("RES")).show()
+&lt;/pr&gt;
+&lt;pr&gt;
+    ---------
+    |"RES"  |
+    ---------
+    |20     |
+    |40     |
+    ---------
+&lt;/pr&gt;
+Note: non-greedy tokens such as  are not supported
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -15182,6 +17595,113 @@ and optionally replaces them with replacement.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#reverse" visbl="pub">
+           <a id="reverse(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="reverse(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#reverse(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             reverse
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Wrapper for Snowflake built-in reverse function.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Wrapper for Snowflake built-in reverse function. Gets the reversed string.
+Reverses the order of characters in a string, or of bytes in a binary value.
+The returned value is the same length as the input, but with the characters/bytes
+ in reverse order. If subject is NULL, the result is also NULL.
+Example: SELECT REVERSE('Hello, world!');
++--------------------------+
+             </p>
+             <table class="doctbl">
+              <thead>
+               <tr>
+                <th class="doctbl-left">
+                 <p>
+                  REVERSE('HELLO, WORLD!')
+                 </p>
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="doctbl-left">
+                 <p>
+                  !dlrow ,olleH
+                 </p>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <p>
+              +--------------------------+
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to be reverse.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="str_func" name="com.snowflake.snowpark.functions#right" visbl="pub">
            <a id="right(strExpr:com.snowflake.snowpark.Column,lengthExpr:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -15251,6 +17771,138 @@ and optionally replaces them with replacement.
            </div>
           </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="num_func" name="com.snowflake.snowpark.functions#round" visbl="pub">
+           <a id="round(e:com.snowflake.snowpark.Column,scale:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="round(Column,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#round(e:com.snowflake.snowpark.Column,scale:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             round
+            </span>
+            <span class="params">
+             (
+             <span name="e">
+              e:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="scale">
+              scale:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Rounds the numeric values of the given column
+            <code>
+             e
+            </code>
+            to the
+            <code>
+             scale
+            </code>
+            decimal places using the
+half away from zero rounding mode.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Rounds the numeric values of the given column
+              <code>
+               e
+              </code>
+              to the
+              <code>
+               scale
+              </code>
+              decimal places using the
+half away from zero rounding mode.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.sql(
+  <span class="lit">"select * from (values (-3.78), (-2.55), (1.23), (2.55), (3.78)) as T(a)"</span>)
+df.select(round(col(<span class="lit">"a"</span>), <span class="num">1</span>).alias(<span class="lit">"round"</span>)).show()
+
+-----------
+|<span class="lit">"ROUND"</span>  |
+-----------
+|-<span class="num">3.8</span>     |
+|-<span class="num">2.6</span>     |
+|<span class="num">1.2</span>      |
+|<span class="num">2.6</span>      |
+|<span class="num">3.8</span>      |
+-----------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              e
+             </dt>
+             <dd class="cmt">
+              <p>
+               The column of numeric values to round.
+              </p>
+             </dd>
+             <dt class="param">
+              scale
+             </dt>
+             <dd class="cmt">
+              <p>
+               The number of decimal places to which
+               <code>
+                e
+               </code>
+               should be rounded.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               A new column containing the rounded numeric values.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="num_func" name="com.snowflake.snowpark.functions#round" visbl="pub">
            <a id="round(e:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
            <a id="round(Column):Column">
@@ -15291,14 +17943,57 @@ and optionally replaces them with replacement.
             </span>
            </span>
            <p class="shortcomment cmt">
-            Returns rounded values for the specified column.
+            Rounds the numeric values of the given column
+            <code>
+             e
+            </code>
+            to 0 decimal places using the
+half away from zero rounding mode.
            </p>
            <div class="fullcomment">
             <div class="comment cmt">
              <p>
-              Returns rounded values for the specified column.
+              Rounds the numeric values of the given column
+              <code>
+               e
+              </code>
+              to 0 decimal places using the
+half away from zero rounding mode.
              </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.sql(<span class="lit">"select * from (values (-3.7), (-2.5), (1.2), (2.5), (3.7)) as T(a)"</span>)
+df.select(round(col(<span class="lit">"a"</span>)).alias(<span class="lit">"round"</span>)).show()
+
+-----------
+|<span class="lit">"ROUND"</span>  |
+-----------
+|-<span class="num">4</span>       |
+|-<span class="num">3</span>       |
+|<span class="num">1</span>        |
+|<span class="num">3</span>        |
+|<span class="num">4</span>        |
+-----------</pre>
             </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              e
+             </dt>
+             <dd class="cmt">
+              <p>
+               The column of numeric values to round.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               A new column containing the rounded numeric values.
+              </p>
+             </dd>
+            </dl>
             <dl class="attributes block">
              <dt>
               Since
@@ -15359,14 +18054,78 @@ and optionally replaces them with replacement.
             </span>
            </span>
            <p class="shortcomment cmt">
-            Returns rounded values for the specified column.
+            Rounds the numeric values of the given column
+            <code>
+             e
+            </code>
+            to the
+            <code>
+             scale
+            </code>
+            decimal places using the
+half away from zero rounding mode.
            </p>
            <div class="fullcomment">
             <div class="comment cmt">
              <p>
-              Returns rounded values for the specified column.
+              Rounds the numeric values of the given column
+              <code>
+               e
+              </code>
+              to the
+              <code>
+               scale
+              </code>
+              decimal places using the
+half away from zero rounding mode.
              </p>
+             <p>
+              Example:
+             </p>
+             <pre><span class="kw">val</span> df = session.sql(
+  <span class="lit">"select * from (values (-3.78), (-2.55), (1.23), (2.55), (3.78)) as T(a)"</span>)
+df.select(round(col(<span class="lit">"a"</span>), lit(<span class="num">1</span>)).alias(<span class="lit">"round"</span>)).show()
+
+-----------
+|<span class="lit">"ROUND"</span>  |
+-----------
+|-<span class="num">3.8</span>     |
+|-<span class="num">2.6</span>     |
+|<span class="num">1.2</span>      |
+|<span class="num">2.6</span>      |
+|<span class="num">3.8</span>      |
+-----------</pre>
             </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              e
+             </dt>
+             <dd class="cmt">
+              <p>
+               The column of numeric values to round.
+              </p>
+             </dd>
+             <dt class="param">
+              scale
+             </dt>
+             <dd class="cmt">
+              <p>
+               A column representing the number of decimal places to which
+               <code>
+                e
+               </code>
+               should be rounded.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               A new column containing the rounded numeric values.
+              </p>
+             </dd>
+            </dl>
             <dl class="attributes block">
              <dt>
               Since
@@ -16356,6 +19115,494 @@ where N is the specified output digest size.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#shiftleft" visbl="pub">
+           <a id="shiftleft(c:com.snowflake.snowpark.Column,numBits:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="shiftleft(Column,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#shiftleft(c:com.snowflake.snowpark.Column,numBits:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             shiftleft
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="numBits">
+              numBits:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Shift the given value numBits left.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Shift the given value numBits left. If the given value is a long value,
+this function will return a long value else it will return an integer value.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>), (<span class="num">2</span>), (<span class="num">3</span>))).toDF(<span class="lit">"a"</span>)
+  df.select(shiftleft(col(<span class="lit">"A"</span>), <span class="num">1</span>).as(<span class="lit">"shiftleft"</span>)).show()
+---------------
+|<span class="lit">"SHIFTLEFT"</span>  |
+---------------
+|<span class="num">2</span>            |
+|<span class="num">4</span>            |
+|<span class="num">6</span>            |
+---------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to modify.
+              </p>
+             </dd>
+             <dt class="param">
+              numBits
+             </dt>
+             <dd class="cmt">
+              <p>
+               Number of bits to shift.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#shiftright" visbl="pub">
+           <a id="shiftright(c:com.snowflake.snowpark.Column,numBits:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="shiftright(Column,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#shiftright(c:com.snowflake.snowpark.Column,numBits:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             shiftright
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             ,
+             <span name="numBits">
+              numBits:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Shift the given value numBits right.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Shift the given value numBits right. If the given value is a long value,
+it will return a long value else it will return an integer value.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">1</span>), (<span class="num">2</span>), (<span class="num">3</span>))).toDF(<span class="lit">"a"</span>)
+  df.select(shiftright(col(<span class="lit">"A"</span>), <span class="num">1</span>).as(<span class="lit">"shiftright"</span>)).show()
+----------------
+|<span class="lit">"SHIFTRIGHT"</span>  |
+----------------
+|<span class="num">0</span>             |
+|<span class="num">1</span>             |
+|<span class="num">1</span>             |
+----------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to modify.
+              </p>
+             </dd>
+             <dt class="param">
+              numBits
+             </dt>
+             <dd class="cmt">
+              <p>
+               Number of bits to shift.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#sign" visbl="pub">
+           <a id="sign(colName:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="sign(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#sign(colName:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             sign
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the sign of its argument as mentioned :
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the sign of its argument as mentioned :
+             </p>
+             <ul>
+              <li>
+               -1 if the argument is negative.
+              </li>
+              <li>
+               1 if it is positive.
+              </li>
+              <li>
+               0 if it is 0.
+              </li>
+             </ul>
+             <p>
+              Args:
+    col: The column to evaluate its sign
+&lt;pr&gt;
+Example::
+    &gt;&gt;&gt; df = session.create_dataframe([(-2, 2, 0)], ["a", "b", "c"])
+    &gt;&gt;&gt; df.select(sign("a").alias("a_sign"), sign("b").alias("b_sign"),
+sign("c").alias("c_sign")).show()
+    ----------------------------------
+    |"A_SIGN"  |"B_SIGN"  |"C_SIGN"  |
+    ----------------------------------
+    |-1        |1         |0         |
+    ----------------------------------
+&lt;/pr&gt;
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#signum" visbl="pub">
+           <a id="signum(columnName:String):com.snowflake.snowpark.Column">
+           </a>
+           <a id="signum(String):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#signum(columnName:String):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             signum
+            </span>
+            <span class="params">
+             (
+             <span name="columnName">
+              columnName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the sign of the given column.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the sign of the given column. Returns either 1 for positive,
+ 0 for 0 or
+NaN, -1 for negative and null for null.
+NOTE: if string values are provided snowflake will attempts to cast.
+ If it casts correctly, returns the calculation,
+ if not an error will be thrown
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              columnName
+             </dt>
+             <dd class="cmt">
+              <p>
+               Name of the column to calculate the sign.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#signum" visbl="pub">
+           <a id="signum(colName:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="signum(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#signum(colName:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             signum
+            </span>
+            <span class="params">
+             (
+             <span name="colName">
+              colName:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the sign of its argument:
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the sign of its argument:
+             </p>
+             <ul>
+              <li>
+               -1 if the argument is negative.
+              </li>
+              <li>
+               1 if it is positive.
+              </li>
+              <li>
+               0 if it is 0.
+              </li>
+             </ul>
+             <p>
+              Args:
+    col: The column to evaluate its sign
+&lt;pr&gt;
+Example::
+    &gt;&gt;&gt; df = session.create_dataframe([(-2, 2, 0)], ["a", "b", "c"])
+    &gt;&gt;&gt; df.select(sign("a").alias("a_sign"), sign("b").alias("b_sign"),
+sign("c").alias("c_sign")).show()
+    ----------------------------------
+    |"A_SIGN"  |"B_SIGN"  |"C_SIGN"  |
+    ----------------------------------
+    |-1        |1         |0         |
+    ----------------------------------
+&lt;/pr&gt;
+             </p>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column object.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="num_func" name="com.snowflake.snowpark.functions#sin" visbl="pub">
            <a id="sin(e:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -16473,6 +19720,100 @@ where N is the specified output digest size.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#size" visbl="pub">
+           <a id="size(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="size(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#size(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             size
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the size of the input ARRAY.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the size of the input ARRAY.
+             </p>
+             <p>
+              If the specified column contains a VARIANT value that contains an ARRAY, the size of the ARRAY
+is returned; otherwise, NULL is returned if the value is not an ARRAY.
+             </p>
+             <p>
+              Example:
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="std">Array</span>(<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>))).toDF(<span class="lit">"id"</span>)
+  df.select(size(col(<span class="lit">"id"</span>))).show()
+
+------------------------
+|<span class="lit">"ARRAY_SIZE("</span><span class="lit">"ID"</span><span class="lit">")"</span>  |
+------------------------
+|<span class="num">3</span>                     |
+------------------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to get the size.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Size of array column.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -17367,6 +20708,87 @@ starting from the character/byte specified by pos, with limited length.
              <dd>
               <p>
                0.1.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#substring_index" visbl="pub">
+           <a id="substring_index(str:String,delim:String,count:Int):com.snowflake.snowpark.Column">
+           </a>
+           <a id="substring_index(String,String,Int):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#substring_index(str:String,delim:String,count:Int):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             substring_index
+            </span>
+            <span class="params">
+             (
+             <span name="str">
+              str:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="delim">
+              delim:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             ,
+             <span name="count">
+              count:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the substring from string str before count occurrences
+of the delimiter delim.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the substring from string str before count occurrences
+of the delimiter delim. If count is positive,
+everything the left of the final delimiter (counting from left)
+ is returned. If count is negative, every to the right of the
+final delimiter (counting from the right) is returned.
+substring_index performs a case-sensitive match when searching for delim.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>
@@ -20112,6 +23534,78 @@ places after the decimal point.
               <p>
                0.1.0
               </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#udf" visbl="prt">
+           <a id="udf(funcName:String)(func:=&gt;com.snowflake.snowpark.UserDefinedFunction):com.snowflake.snowpark.UserDefinedFunction">
+           </a>
+           <a id="udf(String)(⇒UserDefinedFunction):UserDefinedFunction">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#udf(funcName:String)(func:=&gt;com.snowflake.snowpark.UserDefinedFunction):com.snowflake.snowpark.UserDefinedFunction" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             udf
+            </span>
+            <span class="params">
+             (
+             <span name="funcName">
+              funcName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="params">
+             (
+             <span name="func">
+              func: ⇒
+              <a class="extype" href="UserDefinedFunction.html" name="com.snowflake.snowpark.UserDefinedFunction">
+               UserDefinedFunction
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="UserDefinedFunction.html" name="com.snowflake.snowpark.UserDefinedFunction">
+              UserDefinedFunction
+             </a>
+            </span>
+           </span>
+           <div class="fullcomment">
+            <dl class="attributes block">
+             <dt>
+              Attributes
+             </dt>
+             <dd>
+              protected
+             </dd>
+             <dt>
+              Annotations
+             </dt>
+             <dd>
+              <span class="name">
+               @inline
+              </span>
+              <span class="args">
+               ()
+              </span>
              </dd>
             </dl>
            </div>
@@ -27384,6 +30878,175 @@ places after the decimal point.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#unbase64" visbl="pub">
+           <a id="unbase64(col:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="unbase64(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#unbase64(col:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             unbase64
+            </span>
+            <span class="params">
+             (
+             <span name="col">
+              col:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Decodes a BASE64 encoded string column and returns it as a column.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Decodes a BASE64 encoded string column and returns it as a column.
+Example
+             </p>
+             <pre> <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>(<span class="lit">"dGVzdA=="</span>)).toDF(<span class="lit">"a"</span>)
+ df.select(unbase64(col(<span class="lit">"a"</span>)).as(<span class="lit">"unbase64"</span>)).show()
+--------------
+|<span class="lit">"UNBASE64"</span>  |
+--------------
+|test        |
+--------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               the decoded value of the given encoded value.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#unhex" visbl="pub">
+           <a id="unhex(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="unhex(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#unhex(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             unhex
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Inverse of hex.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Inverse of hex. Interprets each pair of characters as a hexadecimal number
+and converts to the byte representation of number.
+Example
+             </p>
+             <pre>  <span class="kw">val</span> df = session.createDataFrame(<span class="std">Seq</span>((<span class="num">31</span>), (<span class="num">32</span>), (<span class="num">33</span>))).toDF(<span class="lit">"a"</span>)
+  df.withColumn(<span class="lit">"unhex_col"</span>, unhex(col(<span class="lit">"A"</span>))).select(<span class="lit">"unhex_col"</span>).show()
+---------------
+|<span class="lit">"UNHEX_COL"</span>  |
+---------------
+|<span class="num">1</span>            |
+|<span class="num">2</span>            |
+|<span class="num">3</span>            |
+---------------</pre>
+            </div>
+            <dl class="paramcmts block">
+             <dt class="param">
+              c
+             </dt>
+             <dd class="cmt">
+              <p>
+               Column to encode.
+              </p>
+             </dd>
+             <dt>
+              returns
+             </dt>
+             <dd class="cmt">
+              <p>
+               Encoded string.
+              </p>
+             </dd>
+            </dl>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="gen_func" name="com.snowflake.snowpark.functions#uniform" visbl="pub">
            <a id="uniform(min:com.snowflake.snowpark.Column,max:com.snowflake.snowpark.Column,gen:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
            </a>
@@ -27505,6 +31168,121 @@ session.generator(<span class="num">10</span>, seq4(), uniform(lit(<span class="
               <p>
                0.11.0
               </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.functions#unix_timestamp" visbl="pub">
+           <a id="unix_timestamp(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column">
+           </a>
+           <a id="unix_timestamp(Column):Column">
+           </a>
+           <span class="permalink">
+            <a href="functions$.html#unix_timestamp(c:com.snowflake.snowpark.Column):com.snowflake.snowpark.Column" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             unix_timestamp
+            </span>
+            <span class="params">
+             (
+             <span name="c">
+              c:
+              <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+               Column
+              </a>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Column.html" name="com.snowflake.snowpark.Column">
+              Column
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the current Unix timestamp (in seconds) as a long.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the current Unix timestamp (in seconds) as a long.
+Extracts a specified date or time portion from a date, time, or timestamp.
+how:
+EXTRACT , HOUR / MINUTE / SECOND , YEAR* / DAY* / WEEK* / MONTH / QUARTER
+Construction - DATE_PART( &lt;date_or_time_part&gt; , &lt;date_or_time_expr&gt; )
+SELECT TO_TIMESTAMP('2013-05-08T23:39:20.123-07:00') AS "TIME_STAMP1",
+ DATE_PART(EPOCH_SECOND, "TIME_STAMP1") AS "EXTRACTED EPOCH SECOND";
++-------------------------+------------------------+
+             </p>
+             <table class="doctbl">
+              <thead>
+               <tr>
+                <th class="doctbl-right">
+                 <p>
+                  TIME_STAMP1
+                 </p>
+                </th>
+                <th class="doctbl-right">
+                 <p>
+                  EXTRACTED EPOCH SECOND
+                 </p>
+                </th>
+               </tr>
+              </thead>
+              <tbody>
+               <tr>
+                <td class="doctbl-right">
+                 <p>
+                  2013-05-08 23:39:20.123
+                 </p>
+                </td>
+                <td class="doctbl-right">
+                 <p>
+                  1368056360
+                 </p>
+                </td>
+               </tr>
+              </tbody>
+             </table>
+             <p>
+              +-------------------------+------------------------+
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
+              </p>
+             </dd>
+             <dt>
+              Note
+             </dt>
+             <dd>
+              <span class="cmt">
+               <p>
+                All calls of
+                <code>
+                 unix_timestamp
+                </code>
+                within the same query return the same value
+               </p>
+              </span>
              </dd>
             </dl>
            </div>

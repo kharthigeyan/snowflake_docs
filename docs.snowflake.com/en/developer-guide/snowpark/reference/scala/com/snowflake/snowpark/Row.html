@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.Row
+   Snowpark 1.14.0  - com.snowflake.snowpark.Row
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.Row" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.Row" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.Row" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.Row" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="../../../../../scala/index.html" id="dev-guide-link">
@@ -980,6 +980,63 @@
       </div>
       <div id="template">
        <div id="allMembers">
+        <div class="members" id="constructors">
+         <h3>
+          Instance Constructors
+         </h3>
+         <ol>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.Row#&lt;init&gt;" visbl="prt">
+           <a id="&lt;init&gt;(values:Array[Any]):com.snowflake.snowpark.Row">
+           </a>
+           <a id="&lt;init&gt;:Row">
+           </a>
+           <span class="permalink">
+            <a href="Row.html#&lt;init&gt;(values:Array[Any]):com.snowflake.snowpark.Row" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             new
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             Row
+            </span>
+            <span class="params">
+             (
+             <span name="values">
+              values:
+              <span class="extype" name="scala.Array">
+               Array
+              </span>
+              [
+              <span class="extype" name="scala.Any">
+               Any
+              </span>
+              ]
+             </span>
+             )
+            </span>
+           </span>
+           <div class="fullcomment">
+            <dl class="attributes block">
+             <dt>
+              Attributes
+             </dt>
+             <dd>
+              protected
+             </dd>
+            </dl>
+           </div>
+          </li>
+         </ol>
+        </div>
         <div class="values members">
          <h3>
           Value Members
@@ -1303,6 +1360,57 @@
               <p>
                0.1.0
               </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.Row#convertValueToString" visbl="prt">
+           <a id="convertValueToString(value:Any):String">
+           </a>
+           <a id="convertValueToString(Any):String">
+           </a>
+           <span class="permalink">
+            <a href="Row.html#convertValueToString(value:Any):String" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             convertValueToString
+            </span>
+            <span class="params">
+             (
+             <span name="value">
+              value:
+              <span class="extype" name="scala.Any">
+               Any
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="scala.Predef.String">
+              String
+             </span>
+            </span>
+           </span>
+           <div class="fullcomment">
+            <dl class="attributes block">
+             <dt>
+              Attributes
+             </dt>
+             <dd>
+              protected
              </dd>
             </dl>
            </div>
@@ -2286,6 +2394,87 @@ Casts Byte, Short, Int number to Long if possible.
             </dl>
            </div>
           </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="getter" name="com.snowflake.snowpark.Row#getMap" visbl="pub">
+           <a id="getMap[T,U](index:Int):Map[T,U]">
+           </a>
+           <a id="getMap[T,U](Int):Map[T,U]">
+           </a>
+           <span class="permalink">
+            <a href="Row.html#getMap[T,U](index:Int):Map[T,U]" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             getMap
+            </span>
+            <span class="tparams">
+             [
+             <span name="T">
+              T
+             </span>
+             ,
+             <span name="U">
+              U
+             </span>
+             ]
+            </span>
+            <span class="params">
+             (
+             <span name="index">
+              index:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="scala.Predef.Map">
+              Map
+             </span>
+             [
+             <span class="extype" name="com.snowflake.snowpark.Row.getMap.T">
+              T
+             </span>
+             ,
+             <span class="extype" name="com.snowflake.snowpark.Row.getMap.U">
+              U
+             </span>
+             ]
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the value of the column at the given index as a Map value.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the value of the column at the given index as a Map value.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
           <li class="indented0" data-isabs="false" fullcomment="yes" group="getter" name="com.snowflake.snowpark.Row#getMapOfVariant" visbl="pub">
            <a id="getMapOfVariant(index:Int):Map[String,com.snowflake.snowpark.types.Variant]">
            </a>
@@ -2351,6 +2540,140 @@ Casts Byte, Short, Int number to Long if possible.
              <dd>
               <p>
                0.2.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="getter" name="com.snowflake.snowpark.Row#getObject" visbl="pub">
+           <a id="getObject(index:Int):com.snowflake.snowpark.Row">
+           </a>
+           <a id="getObject(Int):Row">
+           </a>
+           <span class="permalink">
+            <a href="Row.html#getObject(index:Int):com.snowflake.snowpark.Row" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             getObject
+            </span>
+            <span class="params">
+             (
+             <span name="index">
+              index:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <a class="extype" href="Row.html" name="com.snowflake.snowpark.Row">
+              Row
+             </a>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the Snowflake Object value at the given index as a Row value.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the Snowflake Object value at the given index as a Row value.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="getter" name="com.snowflake.snowpark.Row#getSeq" visbl="pub">
+           <a id="getSeq[T](index:Int):Seq[T]">
+           </a>
+           <a id="getSeq[T](Int):Seq[T]">
+           </a>
+           <span class="permalink">
+            <a href="Row.html#getSeq[T](index:Int):Seq[T]" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             getSeq
+            </span>
+            <span class="tparams">
+             [
+             <span name="T">
+              T
+             </span>
+             ]
+            </span>
+            <span class="params">
+             (
+             <span name="index">
+              index:
+              <span class="extype" name="scala.Int">
+               Int
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="scala.Seq">
+              Seq
+             </span>
+             [
+             <span class="extype" name="com.snowflake.snowpark.Row.getSeq.T">
+              T
+             </span>
+             ]
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Returns the value of the column at the given index as a Seq value.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Returns the value of the column at the given index as a Seq value.
+             </p>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.13.0
               </p>
              </dd>
             </dl>

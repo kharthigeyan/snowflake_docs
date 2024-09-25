@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.types.Variant
+   Snowpark 1.14.0  - com.snowflake.snowpark.types.Variant
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.types.Variant" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.types.Variant" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.types.Variant" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.types.Variant" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="../../../../../../scala/index.html" id="dev-guide-link">
@@ -2477,6 +2477,66 @@ If the parsing failed, the string is stored as text.
              <dd>
               <p>
                0.2.0
+              </p>
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.types.Variant#asJsonNode" visbl="pub">
+           <a id="asJsonNode():com.fasterxml.jackson.databind.JsonNode">
+           </a>
+           <a id="asJsonNode():JsonNode">
+           </a>
+           <span class="permalink">
+            <a href="Variant.html#asJsonNode():com.fasterxml.jackson.databind.JsonNode" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             asJsonNode
+            </span>
+            <span class="params">
+             ()
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="com.fasterxml.jackson.databind.JsonNode">
+              JsonNode
+             </span>
+            </span>
+           </span>
+           <p class="shortcomment cmt">
+            Return the variant value as a JsonNode.
+           </p>
+           <div class="fullcomment">
+            <div class="comment cmt">
+             <p>
+              Return the variant value as a JsonNode. This function allows to read the JSON object directly
+as JsonNode from variant column rather parsing it as String
+Example - to get the first value from array for key "a"
+             </p>
+             <pre>  <span class="kw">val</span> sv = <span class="kw">new</span> Variant(<span class="lit">"{\"a\": [1, 2], \"b\": 3, \"c\": \"xyz\"}"</span>)
+  println(sv.asJsonNode().get(<span class="lit">"a"</span>).get(<span class="num">0</span>))
+output
+<span class="num">1</span></pre>
+            </div>
+            <dl class="attributes block">
+             <dt>
+              Since
+             </dt>
+             <dd>
+              <p>
+               1.14.0
               </p>
              </dd>
             </dl>

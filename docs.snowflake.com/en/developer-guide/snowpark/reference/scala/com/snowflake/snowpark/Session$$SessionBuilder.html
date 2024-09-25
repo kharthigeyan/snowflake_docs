@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.Session.SessionBuilder
+   Snowpark 1.14.0  - com.snowflake.snowpark.Session.SessionBuilder
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.Session.SessionBuilder" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.Session.SessionBuilder" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.Session.SessionBuilder" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.Session.SessionBuilder" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="../../../../../scala/index.html" id="dev-guide-link">
@@ -764,8 +764,19 @@
             <div class="comment cmt">
              <p>
               Adds the app name to set in the query_tag after session creation.
-The query tag will be set with this format 'APPNAME=${appName}'.
              </p>
+             <p>
+              Since version 1.13.0, the app name is set to the query tag in JSON format. For example:
+             </p>
+             <pre><span class="kw">val</span> session = Session.builder.appName(<span class="lit">"myApp"</span>).configFile(myConfigFile).create
+print(session.getQueryTag().get)
+{<span class="lit">"APPNAME"</span>:<span class="lit">"myApp"</span>}</pre>
+             <p>
+              In previous versions it is set using a key=value format. For example:
+             </p>
+             <pre><span class="kw">val</span> session = Session.builder.appName(<span class="lit">"myApp"</span>).configFile(myConfigFile).create
+print(session.getQueryTag().get)
+APPNAME=myApp</pre>
             </div>
             <dl class="paramcmts block">
              <dt class="param">

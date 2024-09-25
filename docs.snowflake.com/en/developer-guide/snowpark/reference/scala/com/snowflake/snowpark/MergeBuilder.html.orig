@@ -4,10 +4,10 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
   <title>
-   Snowpark 1.12.0  - com.snowflake.snowpark.MergeBuilder
+   Snowpark 1.14.0  - com.snowflake.snowpark.MergeBuilder
   </title>
-  <meta content="Snowpark 1.12.0 - com.snowflake.snowpark.MergeBuilder" name="description"/>
-  <meta content="Snowpark 1.12.0 com.snowflake.snowpark.MergeBuilder" name="keywords"/>
+  <meta content="Snowpark 1.14.0 - com.snowflake.snowpark.MergeBuilder" name="description"/>
+  <meta content="Snowpark 1.14.0 com.snowflake.snowpark.MergeBuilder" name="keywords"/>
   <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
   <link href="../../../lib/index.css" media="screen" rel="stylesheet" type="text/css"/>
   <link href="../../../lib/template.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -63,7 +63,7 @@
    <span id="doc-title">
     Snowpark API Reference
     <span id="doc-version">
-     1.12.0
+     1.14.0
     </span>
     <br/>
     <a href="https://docs.snowflake.com/en/developer-guide/snowpark/scala/index.html" id="dev-guide-link">
@@ -1096,6 +1096,85 @@
              </dt>
              <dd>
               AnyRef → Any
+             </dd>
+            </dl>
+           </div>
+          </li>
+          <li class="indented0" data-isabs="false" fullcomment="yes" group="Ungrouped" name="com.snowflake.snowpark.MergeBuilder#action" visbl="prt">
+           <a id="action[T](funcName:String)(func:=&gt;T):T">
+           </a>
+           <a id="action[T](String)(⇒T):T">
+           </a>
+           <span class="permalink">
+            <a href="../../../com/snowflake/snowpark/MergeBuilder.html#action[T](funcName:String)(func:=&gt;T):T" title="Permalink">
+             <i class="material-icons">
+              
+             </i>
+            </a>
+           </span>
+           <span class="modifier_kind">
+            <span class="modifier">
+            </span>
+            <span class="kind">
+             def
+            </span>
+           </span>
+           <span class="symbol">
+            <span class="name">
+             action
+            </span>
+            <span class="tparams">
+             [
+             <span name="T">
+              T
+             </span>
+             ]
+            </span>
+            <span class="params">
+             (
+             <span name="funcName">
+              funcName:
+              <span class="extype" name="scala.Predef.String">
+               String
+              </span>
+             </span>
+             )
+            </span>
+            <span class="params">
+             (
+             <span name="func">
+              func: ⇒
+              <span class="extype" name="com.snowflake.snowpark.MergeBuilder.action.T">
+               T
+              </span>
+             </span>
+             )
+            </span>
+            <span class="result">
+             :
+             <span class="extype" name="com.snowflake.snowpark.MergeBuilder.action.T">
+              T
+             </span>
+            </span>
+           </span>
+           <div class="fullcomment">
+            <dl class="attributes block">
+             <dt>
+              Attributes
+             </dt>
+             <dd>
+              protected
+             </dd>
+             <dt>
+              Annotations
+             </dt>
+             <dd>
+              <span class="name">
+               @inline
+              </span>
+              <span class="args">
+               ()
+              </span>
              </dd>
             </dl>
            </div>
